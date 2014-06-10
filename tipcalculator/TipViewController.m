@@ -48,9 +48,8 @@
     [self.view endEditing:YES];
 }
 
-- (void)updateValues {
-    float billAmount = [self.billTextField.text floatValue];
-    self.
-}
+//- (void)updateValues {
+//    float billAmount = [self.billTextField.text floatValue];
+//}
 
 @end
