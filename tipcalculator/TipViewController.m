@@ -17,6 +17,7 @@
 
 - (IBAction)onTap:(id)sender;
 - (void)updateValues;
+- (IBAction)billTextFieldChaged:(id)sender;
 
 @end
 
@@ -37,6 +38,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self updateValues];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,6 +59,10 @@
     float totalAmount = tipAmount + billAmount;
     self.tipLabel.text = [NSString stringWithFormat:@"$%0.2f", tipAmount];
     self.totalLabel.text = [NSString stringWithFormat:@"$%0.2f", totalAmount];
+}
+
+- (IBAction)billTextFieldChaged:(id)sender {
+    [self updateValues];
 }
 
 @end
